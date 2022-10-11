@@ -8,6 +8,7 @@ COPY repos ../apps
 USER root
 
 RUN install-app posawesome && \
-    install-app wiki
+    install-app wiki && \
+    install-app corrugate_core
 
 USER frappe

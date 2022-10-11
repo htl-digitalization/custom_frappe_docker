@@ -20,3 +20,4 @@
 
 git clone --depth 1 --branch master https://github.com/yrestom/POS-Awesome repos/posawesome
 git clone --depth 1 --branch master https://github.com/frappe/wiki repos/wiki
+git clone --depth 1 --branch main https://github.com/htl-digitalization/corrugate_core.git repos/corrugate_core

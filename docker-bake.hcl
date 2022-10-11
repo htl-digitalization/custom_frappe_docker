@@ -7,15 +7,15 @@ variable "ERPNEXT_VERSION" {
 }
 
 variable "REGISTRY_NAME" {
-  default = "custom_images"
+  default = "hieutrluu"
 }
 
 variable "BACKEND_IMAGE_NAME" {
-  default = "custom_worker"
+  default = "corrugate_core_worker"
 }
 
 variable "FRONTEND_IMAGE_NAME" {
-  default = "custom_nginx"
+  default = "corrugate_core_nginx"
 }
 
 variable "VERSION" {
