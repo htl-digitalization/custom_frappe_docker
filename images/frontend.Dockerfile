@@ -20,7 +20,7 @@ RUN bench build --production --verbose --hard-link
 
 FROM frappe/frappe-nginx:${FRAPPE_VERSION}
 
-# USER root
+USER root
 
 RUN rm -fr /usr/share/nginx/html/assets
 
