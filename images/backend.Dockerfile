@@ -5,10 +5,11 @@ FROM frappe/erpnext-worker:${ERPNEXT_VERSION}
 
 COPY repos ../apps
 
-USER root
+# USER root
 
-RUN install-app posawesome && \
+RUN install-app chat && \
+    install-app posawesome && \
     install-app wiki && \
     install-app tpp_erpnext
 
-USER frappe
+# USER frappe
