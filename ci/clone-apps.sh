@@ -21,4 +21,4 @@
 git clone --depth 1 --branch master https://github.com/yrestom/POS-Awesome repos/posawesome
 git clone --depth 1 --branch master https://github.com/frappe/wiki repos/wiki
 # git clone --depth 1 --branch main https://github.com/htl-digitalization/tpp_erpnext.git repos/tpp_erpnext
-git clone --depth 1 --branch main https://hieutrluu:${PERSONAL_ACCESS_TOKEN}@github.com/htl-digitalization/tpp_erpnext repos/tpp_erpnext
+git clone --depth 1 --branch prod https://hieutrluu:${PERSONAL_ACCESS_TOKEN}@github.com/htl-digitalization/tpp_erpnext repos/tpp_erpnext
