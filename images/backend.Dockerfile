@@ -10,6 +10,7 @@ USER root
 RUN install-app chat && \
     install-app posawesome && \
     install-app wiki && \
+    install-app lms && \
     install-app tpp_erpnext
 
-# USER frappe
+USER frappe
