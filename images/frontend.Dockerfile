@@ -25,5 +25,5 @@ USER root
 RUN rm -fr /usr/share/nginx/html/assets
 
 COPY --from=assets /home/frappe/frappe-bench/sites/assets /usr/share/nginx/html/assets
-
+COPY images/nginx-template.conf /etc/nginx/templates/default.conf.template
 USER 1000
