@@ -28,7 +28,7 @@ group "default" {
 
 target "backend" {
     dockerfile = "images/backend.Dockerfile"
-    tags = ["${REGISTRY_NAME}/${BACKEND_IMAGE_NAME}:${VERSION}"]
+    tags = ["${REGISTRY_NAME}/${BACKEND_IMAGE_NAME}:${VERSION}-develop"]
     args = {
       "ERPNEXT_VERSION" = ERPNEXT_VERSION
     }
@@ -36,7 +36,7 @@ target "backend" {
 
 target "frontend" {
     dockerfile = "images/frontend.Dockerfile"
-    tags = ["${REGISTRY_NAME}/${FRONTEND_IMAGE_NAME}:${VERSION}"]
+    tags = ["${REGISTRY_NAME}/${FRONTEND_IMAGE_NAME}:${VERSION}-develop"]
     args = {
       "FRAPPE_VERSION" = FRAPPE_VERSION
       "ERPNEXT_VERSION" = ERPNEXT_VERSION
