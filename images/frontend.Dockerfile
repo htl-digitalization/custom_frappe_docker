@@ -5,7 +5,7 @@ FROM frappe/bench:latest as assets
 
 ARG FRAPPE_VERSION
 RUN bench init --version=develop --frappe-branch develop --skip-redis-config-generation --verbose --skip-assets /home/frappe/frappe-bench
-RUN python -m pip install --quiet --upgrade -e /home/frappe/frappe-bench/apps/frappe
+RUN /home/frappe/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/frappe/frappe-bench/apps/frappe
 
 WORKDIR /home/frappe/frappe-bench
 
