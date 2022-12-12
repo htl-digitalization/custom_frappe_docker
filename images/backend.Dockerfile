@@ -13,6 +13,9 @@ RUN install-app chat && \
     install-app posawesome && \
     install-app wiki && \
     install-app lms && \
+    install-app press && \
+    install-app castlecraft && \
+    install-app microsoft_integration && \
     install-app tpp_erpnext
 
 USER frappe
