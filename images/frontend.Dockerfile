@@ -18,7 +18,7 @@ RUN bench setup requirements
 
 RUN bench build --production --verbose --hard-link
 
-FROM hieutrluu/frappe-nginx-develop:${FRAPPE_VERSION}
+FROM hieutrluu/erpnext-nginx-develop:${FRAPPE_VERSION}
 
 USER root
 
