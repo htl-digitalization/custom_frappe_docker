@@ -4,7 +4,7 @@ ARG ERPNEXT_VERSION
 FROM frappe/bench:latest as assets
 
 ARG FRAPPE_VERSION
-RUN bench init --version=develop --skip-redis-config-generation --verbose --skip-assets /home/frappe/frappe-bench
+RUN bench init --version=develop --verbose --skip-assets /home/frappe/frappe-bench
 
 WORKDIR /home/frappe/frappe-bench
 
