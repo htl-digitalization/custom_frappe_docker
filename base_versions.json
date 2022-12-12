@@ -1,7 +1,10 @@
 {
   "frappe": "v14.18.1",
   "erpnext": "v14.10.0",
-  "erpnext_nginx_v14": "v14.18.0",
-  "erpnext_worker_v14": "v14.10.0",
-  "assets_version_v14": "v14.6.0"
+  "frappe-develop": "v0.0.1",
+  "erpnext-develop": "v0.0.1"
 }
+
+// "erpnext_nginx_v14": "v14.18.0",
+  // "erpnext_worker_v14": "v14.10.0",
+  // "assets_version_v14": "v14.6.0"

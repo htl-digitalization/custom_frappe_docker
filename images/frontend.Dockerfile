@@ -4,13 +4,13 @@ ARG ERPNEXT_VERSION
 FROM frappe/bench:latest as assets
 
 ARG FRAPPE_VERSION
-RUN bench init --version=${FRAPPE_VERSION} --skip-redis-config-generation --verbose --skip-assets /home/frappe/frappe-bench
+RUN bench init --version=develop --skip-redis-config-generation --verbose --skip-assets /home/frappe/frappe-bench
 
 WORKDIR /home/frappe/frappe-bench
 
 # Uncomment following if ERPNext is required
-# ARG ERPNEXT_VERSION
-# RUN bench get-app --branch=${ERPNEXT_VERSION} --skip-assets --resolve-deps erpnext
+ARG ERPNEXT_VERSION
+RUN bench get-app --branch=version-14 --skip-assets --resolve-deps erpnext
 
 COPY --chown=frappe:frappe repos apps
 
@@ -18,7 +18,7 @@ RUN bench setup requirements
 
 RUN bench build --production --verbose --hard-link
 
-FROM frappe/frappe-nginx:${FRAPPE_VERSION}
+FROM hieutrluu/frappe-nginx-develop:${FRAPPE_VERSION}
 
 USER root
 
