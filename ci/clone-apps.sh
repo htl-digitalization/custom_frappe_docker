@@ -17,7 +17,6 @@
 # git clone --depth 1 --branch master https://username:${PERSONAL_ACCESS_TOKEN}@github.com/frappe/twilio-integration repos/twilio_integration
 
 # Following are public repositories.
-
 git clone --depth 1 --branch version-14 https://github.com/yrestom/POS-Awesome repos/posawesome
 git clone --depth 1 --branch master https://github.com/frappe/wiki repos/wiki
 git clone --depth 1 --branch main https://github.com/frappe/chat repos/chat
