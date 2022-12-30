@@ -1,9 +1,9 @@
 variable "FRAPPE_VERSION" {
-  default = "version-14"
+  default = "v14.20.0"
 }
 
 variable "ERPNEXT_VERSION" {
-  default = "version-14"
+  default = "v14.11.0"
 }
 
 variable "REGISTRY_NAME" {
@@ -11,11 +11,11 @@ variable "REGISTRY_NAME" {
 }
 
 variable "BACKEND_IMAGE_NAME" {
-  default = "corrugate_core_worker"
+  default = "tpp_erpnext_worker"
 }
 
 variable "FRONTEND_IMAGE_NAME" {
-  default = "corrugate_core_nginx"
+  default = "tpp_erpnext_nginx"
 }
 
 variable "VERSION" {
