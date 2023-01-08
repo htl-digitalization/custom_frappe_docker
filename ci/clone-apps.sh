@@ -26,4 +26,5 @@ git clone --depth 1 --branch master https://github.com/frappe/press.git repos/pr
 # git clone --depth 1 --branch main https://github.com/castlecraft/cfe repos/castlecraft
 # git clone --depth 1 --branch main https://github.com/castlecraft/microsoft_integration repos/microsoft_integration
 git clone --depth 1 --branch main https://hieutrluu:${PERSONAL_ACCESS_TOKEN}@github.com/htl-digitalization/tpp_custom repos/tpp_custom
+git clone --depth 1 --branch main https://hieutrluu:${PERSONAL_ACCESS_TOKEN}@github.com/htl-digitalization/tpp_manufacturing repos/tpp_manufacturing
 git clone --depth 1 --branch prod https://hieutrluu:${PERSONAL_ACCESS_TOKEN}@github.com/htl-digitalization/tpp_erpnext repos/tpp_erpnext

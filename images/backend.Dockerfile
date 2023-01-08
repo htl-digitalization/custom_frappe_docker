@@ -17,6 +17,7 @@ RUN install-app chat && \
     # install-app castlecraft && \
     # install-app microsoft_integration && \
     install-app tpp_erpnext && \ 
+    install-app manufacturing && \ 
     install-app tpp_custom
 
 USER frappe
